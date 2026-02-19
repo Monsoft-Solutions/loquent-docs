@@ -25,6 +25,8 @@ export default defineConfig({
 					label: 'Getting Started',
 					items: [
 						{ label: 'Welcome', slug: 'getting-started/welcome' },
+						{ label: 'Sign Up', slug: 'getting-started/sign-up' },
+						{ label: 'Create an Agent', slug: 'getting-started/create-agent' },
 					],
 				},
 			],
