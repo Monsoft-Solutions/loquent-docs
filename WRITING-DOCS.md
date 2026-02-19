@@ -73,16 +73,36 @@ LOQUENT_APP_URL=https://app.loquent.io
 - Wait for loading states to resolve before capturing.
 - If a page has animations, wait for them to settle.
 
-### File Naming
+### Uploading Screenshots
+
+Screenshots are stored in **Vercel Blob** (not committed to git). Use the upload script after capturing a screenshot locally:
+
+```bash
+./scripts/upload-screenshot.sh <local-file> <destination-path>
+```
+
+Example:
+```bash
+./scripts/upload-screenshot.sh src/assets/screenshots/getting-started/sign-up-form.png getting-started/sign-up-form.png
+# Output: https://wxaijzyufbt0o3u0.public.blob.vercel-storage.com/getting-started/sign-up-form.png
+```
+
+The script:
+1. Reads `BLOB_READ_WRITE_TOKEN` from `.claude-cred`.
+2. Uploads the file to Vercel Blob with public access.
+3. Prints the public URL to stdout.
+4. Deletes the local file.
+
+### Blob Pathname Convention
 
 ```
-src/assets/screenshots/{section}/{page-slug}-{descriptor}.png
+{section}/{page-slug}-{descriptor}.png
 ```
 
 Examples:
-- `src/assets/screenshots/getting-started/welcome-dashboard-overview.png`
-- `src/assets/screenshots/agents/create-agent-form.png`
-- `src/assets/screenshots/agents/create-agent-voice-tab.png`
+- `getting-started/welcome-dashboard-overview.png`
+- `agents/create-agent-form.png`
+- `agents/create-agent-voice-tab.png`
 
 Rules:
 - All lowercase, hyphens only.
@@ -93,12 +113,10 @@ Rules:
 
 ### Referencing in MDX
 
-Use Astro image imports for optimized images:
+Use plain `<img>` tags with the blob URL (no imports needed):
 
 ```mdx
-import dashboard from '../../../assets/screenshots/getting-started/welcome-dashboard-overview.png';
-
-<img src={dashboard.src} alt="The Loquent dashboard after first login" />
+<img src="https://wxaijzyufbt0o3u0.public.blob.vercel-storage.com/getting-started/sign-up-form.png" alt="The Loquent sign-up form" />
 ```
 
 - Every image **must** have a descriptive `alt` attribute.
@@ -252,10 +270,4 @@ The `slug` matches the file path under `src/content/docs/` without the extension
 
 ### Asset Directory
 
-Screenshots go in:
-
-```
-src/assets/screenshots/{section}/
-```
-
-Create the section directory if it does not exist.
+Screenshots are stored in Vercel Blob. When capturing new screenshots, save them temporarily to `src/assets/screenshots/{section}/`, then upload using the upload script. The local file is deleted automatically after upload.
