@@ -27,6 +27,7 @@ export default defineConfig({
 						{ label: 'Welcome', slug: 'getting-started/welcome' },
 						{ label: 'Sign Up', slug: 'getting-started/sign-up' },
 						{ label: 'Create an Agent', slug: 'getting-started/create-agent' },
+						{ label: 'Buy a Phone Number', slug: 'getting-started/buy-number' },
 					],
 				},
 			],
