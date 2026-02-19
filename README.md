@@ -15,7 +15,8 @@ Documentation is fully automated. After each deployment of the [main Loquent app
 3. **Captures screenshots** of every meaningful UI state
 4. **Uploads screenshots** to Vercel Blob storage (not committed to git)
 5. **Writes or updates MDX pages** following the rules in [`WRITING-DOCS.md`](./WRITING-DOCS.md)
-6. **Commits and pushes** to `main`, triggering a Vercel deployment
+6. **Pushes a branch and opens a PR** to `main` following the rules in [`AGENT-WORKFLOW.md`](./AGENT-WORKFLOW.md)
+7. **PR is reviewed and merged**, triggering a Vercel deployment
 
 The result: docs that always match the product, with pixel-accurate screenshots, written in a consistent voice — maintained at zero human cost.
 
@@ -30,6 +31,7 @@ loquent-docs/
 │   ├── upload-screenshot.sh  # Upload a screenshot to Vercel Blob
 │   └── upload-blob.mjs       # Node.js uploader (used by the shell script)
 ├── WRITING-DOCS.md         # Documentation standards the agent follows
+├── AGENT-WORKFLOW.md       # Git branching and PR workflow the agent follows
 └── .claude-cred            # Agent credentials (gitignored)
 ```
 
