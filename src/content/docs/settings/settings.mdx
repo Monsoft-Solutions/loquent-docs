@@ -1,0 +1,77 @@
+---
+title: Settings
+description: Configure your account, organization, telephony, integrations, and reporting
+---
+
+Click **Settings** in the sidebar to open the Settings page. Settings are organized into five tabs: **Account**, **General**, **Telephony**, **Integrations**, and **Reporting**.
+
+## Account
+
+The Account tab lets you update your login credentials.
+
+<img src="https://wxaijzyufbt0o3u0.public.blob.vercel-storage.com/settings/settings-account.png" alt="Settings Account tab showing Change Email section with Current Email, New Email, and Current Password fields, and Change Password section with Current Password and New Password fields" />
+
+### Change email
+
+Enter your new email address and current password, then click **Update Email**.
+
+### Change password
+
+Enter your current password and a new password (minimum 8 characters), then click **Update Password**.
+
+## General
+
+The General tab controls your organization profile.
+
+<img src="https://wxaijzyufbt0o3u0.public.blob.vercel-storage.com/settings/settings-general.png" alt="Settings General tab showing Organization Name field set to Loquent and a Save Settings button" />
+
+| Field | Description |
+|-------|-------------|
+| **Organization Name** | The name displayed across the platform and in reports |
+
+Click **Save Settings** after making changes.
+
+## Telephony
+
+The Telephony tab configures your Twilio credentials for phone number management and call routing.
+
+<img src="https://wxaijzyufbt0o3u0.public.blob.vercel-storage.com/settings/settings-telephony.png" alt="Settings Telephony tab showing Twilio Account SID and Twilio Auth Token fields with a Save Settings button" />
+
+| Field | Description |
+|-------|-------------|
+| **Twilio Account SID** | Your Twilio account identifier (starts with `AC`) |
+| **Twilio Auth Token** | Your Twilio authentication token |
+
+Leave these fields empty to use the system default Twilio account. Provide your own credentials if you want calls routed through your Twilio account.
+
+## Integrations
+
+The Integrations tab connects Loquent to your CRM or external system for automatic client lookups during calls.
+
+<img src="https://wxaijzyufbt0o3u0.public.blob.vercel-storage.com/settings/settings-integrations.png" alt="Settings Integrations tab showing Client Lookup URL, Client Lookup Auth Token fields, Save Settings button, and a Test Integration section with a Phone Number field and Test Lookup button" />
+
+| Field | Description |
+|-------|-------------|
+| **Client Lookup URL** | The API endpoint Loquent calls to look up caller information |
+| **Client Lookup Auth Token** | The authentication token sent with lookup requests |
+
+After saving your settings, use the **Test Integration** section to verify the connection. Enter a phone number and click **Test Lookup** to confirm the response.
+
+## Reporting
+
+The Reporting tab controls which reports are generated and who receives them.
+
+<img src="https://wxaijzyufbt0o3u0.public.blob.vercel-storage.com/settings/settings-reporting.png" alt="Settings Reporting tab showing Daily reports and Per-call reports checkboxes both enabled, and a Report Email Recipients section with an email input field and Add button" />
+
+| Setting | Default | Description |
+|---------|---------|-------------|
+| **Daily reports** | Enabled | Receive a summary of all calls at the end of each day |
+| **Per-call reports** | Enabled | Receive a report immediately after each call ends |
+
+### Add report recipients
+
+Enter an email address in the **Report Email Recipients** field and click **+ Add**. Reports are sent to all listed email addresses. Click **Save Settings** to apply changes.
+
+:::caution
+Telephony credentials and integration tokens are sensitive. Only share them with team members who need access to these settings.
+:::

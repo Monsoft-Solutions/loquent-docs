@@ -1,0 +1,58 @@
+---
+title: Create an Analyzer
+description: Set up call transcription analyzers to extract insights and generate to-dos
+---
+
+## Open Analyzers
+
+Click **Analyzers** in the sidebar. The Analyzers page lists all analyzers in your organization. Analyzers process call transcriptions after each call to extract insights, sentiment, and action items.
+
+<img src="https://wxaijzyufbt0o3u0.public.blob.vercel-storage.com/analyzers/analyzers-list.png" alt="Analyzers page showing an amber Create Analyzer button and an empty state message reading No analyzers yet" />
+
+## Create an analyzer
+
+Click **+ Create Analyzer** to open the analyzer form.
+
+<img src="https://wxaijzyufbt0o3u0.public.blob.vercel-storage.com/analyzers/analyzers-create.png" alt="New Analyzer form with Analyzer Name, Analyzer Prompt textarea, Default analyzer checkbox, and Assigned Phone Numbers section showing one available number" />
+
+Fill in the analyzer fields:
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| **Analyzer Name** | Yes | A display name that identifies this analyzer |
+| **Analyzer Prompt** | Yes | Instructions that tell the AI what to extract from the call transcription. Write this as a system prompt describing the analysis goals. |
+| **Default analyzer** | No | When checked, this analyzer is automatically assigned to new phone numbers |
+
+### Assign phone numbers
+
+The **Assigned Phone Numbers** section lists all phone numbers in your organization. Check the numbers you want this analyzer to process. After a call ends on an assigned number, Loquent sends the transcription to the analyzer for processing.
+
+Click **Save** to create the analyzer.
+
+## Set up to-do types
+
+Analyzers work with **To-Do Types** to generate actionable items from calls. Click **Todo Types** in the sidebar to define the types of to-dos your analyzers can extract.
+
+<img src="https://wxaijzyufbt0o3u0.public.blob.vercel-storage.com/todo-types/todo-types-list.png" alt="To-Do Types page showing an amber Create To-Do Type button and an empty state message reading No to-do types yet" />
+
+Click **+ Create To-Do Type** to open the form.
+
+<img src="https://wxaijzyufbt0o3u0.public.blob.vercel-storage.com/todo-types/todo-types-create.png" alt="New To-Do Type form with Name, Description textarea, and System Tools section showing a Send Email to Caller checkbox" />
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| **Name** | Yes | A label for this to-do type (e.g., "Follow-up Email") |
+| **Description** | Yes | Instructions that help the AI understand when to extract this type of to-do from calls |
+| **System Tools** | No | Actions the to-do can perform automatically, such as **Send Email to Caller** |
+
+Click **Save** to create the to-do type.
+
+## Review to-dos
+
+Click **Todos** in the sidebar to view all to-dos extracted from calls. To-dos appear here automatically after analyzers process call transcriptions.
+
+<img src="https://wxaijzyufbt0o3u0.public.blob.vercel-storage.com/todos/todos-list.png" alt="To-Dos page showing the heading, subtitle, and an empty state message reading No to-dos yet" />
+
+:::tip
+Combine analyzers with to-do types to automate post-call workflows. For example, create a "Follow-up Email" to-do type with the **Send Email to Caller** tool enabled, and your analyzer will automatically queue follow-up emails after relevant calls.
+:::
