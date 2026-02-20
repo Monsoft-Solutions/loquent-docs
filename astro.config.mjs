@@ -36,6 +36,30 @@ export default defineConfig({
 						{ label: 'Create a Knowledge Base', slug: 'knowledge/knowledge-base' },
 					],
 				},
+				{
+					label: 'Calls',
+					items: [
+						{ label: 'Call History', slug: 'calls/call-history' },
+					],
+				},
+				{
+					label: 'Contacts',
+					items: [
+						{ label: 'Manage Contacts', slug: 'contacts/manage-contacts' },
+					],
+				},
+				{
+					label: 'Analyzers',
+					items: [
+						{ label: 'Create an Analyzer', slug: 'analyzers/create-analyzer' },
+					],
+				},
+				{
+					label: 'Settings',
+					items: [
+						{ label: 'Settings', slug: 'settings/settings' },
+					],
+				},
 			],
 			customCss: [
 				'@fontsource/inter/400.css',
