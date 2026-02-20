@@ -30,6 +30,12 @@ export default defineConfig({
 						{ label: 'Buy a Phone Number', slug: 'getting-started/buy-number' },
 					],
 				},
+				{
+					label: 'Knowledge',
+					items: [
+						{ label: 'Create a Knowledge Base', slug: 'knowledge/knowledge-base' },
+					],
+				},
 			],
 			customCss: [
 				'@fontsource/inter/400.css',
