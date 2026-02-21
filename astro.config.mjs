@@ -46,6 +46,9 @@ export default defineConfig({
 					label: 'Contacts',
 					items: [
 						{ label: 'Manage Contacts', slug: 'contacts/manage-contacts' },
+						{ label: 'Contact Details', slug: 'contacts/contact-details' },
+						{ label: 'Add a Phone Number', slug: 'contacts/add-phone-number' },
+						{ label: 'Add an Email Address', slug: 'contacts/add-email-address' },
 					],
 				},
 				{
