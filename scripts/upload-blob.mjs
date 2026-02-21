@@ -12,6 +12,7 @@ const fileBuffer = await readFile(filePath);
 const { url } = await put(destination, fileBuffer, {
   access: 'public',
   addRandomSuffix: false,
+  allowOverwrite: true,
 });
 
 console.log(url);

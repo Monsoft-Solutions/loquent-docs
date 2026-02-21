@@ -1,0 +1,62 @@
+---
+title: To-Do Types
+description: Define the types of tasks Loquent automatically extracts from your phone calls
+---
+
+The **To-Do Types** page lists all the task categories you've configured. After every call, Loquent's AI scans the transcription and creates to-dos for any matching types it finds. Each card shows the type name, description preview, and the system tools assigned to it.
+
+<img src="https://wxaijzyufbt0o3u0.public.blob.vercel-storage.com/todos/todos-types-list.png" alt="The To-Do Types page showing a Follow Up Email card with the Send Email to Caller tool badge" />
+
+## Create a to-do type
+
+Click **+ Create To-Do Type** in the top right. Fill in the form and click **Save**.
+
+<img src="https://wxaijzyufbt0o3u0.public.blob.vercel-storage.com/todos/todos-create-full.png" alt="The New To-Do Type form showing Name, Description, System Tools checkboxes, and Auto-approve checkbox" />
+
+### Name
+
+Give the type a clear, descriptive name — for example, "Follow-up Email" or "Schedule Appointment". This name appears on to-do cards in the To-Dos page.
+
+### Description
+
+Describe what this type of task does and when to extract it. The AI reads this description to decide whether a call contains a matching action.
+
+**Write specific descriptions.** The more context you give, the more accurately the AI identifies relevant tasks.
+
+| Vague (avoid) | Specific (use) |
+|--------------|----------------|
+| Send an email | Send a follow-up email to the caller summarizing the call and next steps |
+| Book meeting | Schedule a demo call when the caller expresses interest in seeing the product |
+
+### System tools
+
+Select which tools Loquent uses when executing this type of to-do.
+
+| Tool | What it does |
+|------|-------------|
+| **Send Email to Caller** | Sends an email to the caller. The recipient is automatically resolved from the contact linked to the call |
+| **Send Email** | Sends an email to a recipient the AI determines from the task description and context |
+
+You can select both tools if the task may need either.
+
+### Auto-approve
+
+Check **Auto-approve** to skip the manual review step. When enabled, Loquent executes to-dos of this type immediately after a call ends — without waiting for your approval.
+
+:::caution
+Use auto-approve only for tasks where human review isn't necessary. Actions like sending emails to callers execute automatically with no confirmation step.
+:::
+
+## Edit a to-do type
+
+Click any card on the To-Do Types page to open the details view. Update the name, description, tools, or auto-approve setting, then click **Save**.
+
+<img src="https://wxaijzyufbt0o3u0.public.blob.vercel-storage.com/todos/todos-type-detail.png" alt="The To-Do Type Details page for Follow Up Email showing the name, description, and Send Email to Caller tool selected" />
+
+## Delete a to-do type
+
+Open the type's details page and click **Delete**. This removes the type permanently. Existing to-dos created from this type are not affected.
+
+## Related pages
+
+- [Manage To-Dos](/todos/manage-todos) — review and approve extracted tasks
