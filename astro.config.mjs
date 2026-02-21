@@ -49,6 +49,13 @@ export default defineConfig({
 					],
 				},
 				{
+					label: 'To-Dos',
+					items: [
+						{ label: 'Manage To-Dos', slug: 'todos/manage-todos' },
+						{ label: 'To-Do Types', slug: 'todos/todo-types' },
+					],
+				},
+				{
 					label: 'Analyzers',
 					items: [
 						{ label: 'Create an Analyzer', slug: 'analyzers/create-analyzer' },
