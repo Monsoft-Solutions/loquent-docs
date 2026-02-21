@@ -40,6 +40,7 @@ export default defineConfig({
 					label: 'Calls',
 					items: [
 						{ label: 'Call History', slug: 'calls/call-history' },
+						{ label: 'Call Details', slug: 'calls/call-details' },
 					],
 				},
 				{
