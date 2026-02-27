@@ -55,6 +55,7 @@ export default defineConfig({
 					items: [
 						{ label: 'Call History', slug: 'calls/call-history' },
 						{ label: 'Call Details', slug: 'calls/call-details' },
+						{ label: 'Cold Transfer', slug: 'calls/cold-transfer' },
 					],
 				},
 				{

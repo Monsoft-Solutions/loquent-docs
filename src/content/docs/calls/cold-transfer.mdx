@@ -1,0 +1,39 @@
+---
+title: Cold Transfer
+description: Let your agent hand off an active call to a human phone number mid-conversation
+---
+
+Cold transfer lets your AI agent redirect an active call to a human team member while the call is in progress. The caller is transferred without the agent staying on the line — hence "cold."
+
+<img src="https://wxaijzyufbt0o3u0.public.blob.vercel-storage.com/calls/cold-transfer.png" alt="Agent Details page showing the Tools section with Transfer Call, Lookup Caller, and Query Knowledge enabled, and a Transfer numbers sub-section with an Add button" />
+
+## How it works
+
+1. During a call, the agent determines (based on its instructions) that a human should take over.
+2. The agent announces the transfer to the caller.
+3. The agent redirects the call to one of the configured transfer numbers.
+4. The caller is connected to the human. The agent disconnects.
+
+The caller ID shown to the human receiving the transfer is your Loquent number.
+
+## Set up a transfer number
+
+1. Open an agent and scroll to the **Tools** section.
+2. Enable the **Transfer Call** tool.
+3. Click **+ Add** in the **Transfer numbers** sub-section and enter the phone number to transfer calls to.
+4. Click **Save**.
+
+You can add multiple transfer numbers. See [Tool Configuration](/agents/tool-configuration) for full details.
+
+## Instruct your agent to transfer
+
+In your agent's instructions, tell it when to offer a transfer:
+
+> "If the caller asks to speak to a person, or if you cannot resolve their issue after two attempts, offer to transfer them to our team."
+
+See [Instruction Builder](/agents/instruction-builder) for how to write and refine instructions.
+
+## Related pages
+
+- [Tool Configuration](/agents/tool-configuration) — configure the transfer numbers and all other tools
+- [Instruction Builder](/agents/instruction-builder) — write the instructions that trigger transfers
