@@ -22,6 +22,12 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
+					label: 'Dashboard',
+					items: [
+						{ label: 'Filter by Date', slug: 'dashboard/filter-by-date' },
+					],
+				},
+				{
 					label: 'Getting Started',
 					items: [
 						{ label: 'Welcome', slug: 'getting-started/welcome' },
