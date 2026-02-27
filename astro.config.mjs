@@ -31,6 +31,12 @@ export default defineConfig({
 					],
 				},
 				{
+					label: 'Agents',
+					items: [
+						{ label: 'Instruction Builder', slug: 'agents/instruction-builder' },
+					],
+				},
+				{
 					label: 'Knowledge',
 					items: [
 						{ label: 'Create a Knowledge Base', slug: 'knowledge/knowledge-base' },
