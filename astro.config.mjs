@@ -40,6 +40,7 @@ export default defineConfig({
 					label: 'Messaging',
 					items: [
 						{ label: 'Messaging Feed', slug: 'messaging/messaging-feed' },
+						{ label: 'Send an SMS', slug: 'messaging/send-sms' },
 					],
 				},
 				{
