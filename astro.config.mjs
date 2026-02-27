@@ -37,6 +37,12 @@ export default defineConfig({
 					],
 				},
 				{
+					label: 'Messaging',
+					items: [
+						{ label: 'Messaging Feed', slug: 'messaging/messaging-feed' },
+					],
+				},
+				{
 					label: 'Calls',
 					items: [
 						{ label: 'Call History', slug: 'calls/call-history' },
