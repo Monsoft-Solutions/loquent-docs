@@ -34,6 +34,7 @@ export default defineConfig({
 					label: 'Agents',
 					items: [
 						{ label: 'Instruction Builder', slug: 'agents/instruction-builder' },
+						{ label: 'Organization Profile', slug: 'agents/organization-profile' },
 					],
 				},
 				{
