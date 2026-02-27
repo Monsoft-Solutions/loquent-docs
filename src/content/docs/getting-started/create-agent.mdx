@@ -5,41 +5,50 @@ description: Set up your first AI voice agent to handle inbound or outbound call
 
 ## Open the Agents page
 
-Click **Agents** in the sidebar. The Voice Agents page lists all agents in your organization. If this is your first time here, the page shows an empty state with a prompt to create your first agent.
+Click **Agents** in the sidebar. The Voice Agents page lists all agents in your organization.
 
-<img src="https://wxaijzyufbt0o3u0.public.blob.vercel-storage.com/getting-started/create-agent-list.png" alt="Voice Agents page showing the heading, subtitle, an amber Create Agent button, and an empty state message reading No agents yet" />
+<img src="https://wxaijzyufbt0o3u0.public.blob.vercel-storage.com/getting-started/create-agent-list.png" alt="Voice Agents page showing three agent cards and a Create Agent button in the top right" />
 
 ## Create a new agent
 
-Click **+ Create Agent** to open the agent creation form. Fill in the two required fields at the top of the page:
+Click **+ Create Agent**. The New Agent form opens with an **Agent Name** field and an **Agent Instructions** section.
 
-| Field | Description | Example |
-| --- | --- | --- |
-| **Agent Name** | A display name that identifies this agent across the platform | `Customer Support Agent` |
-| **Agent Prompt** | Instructions that define how the agent behaves on calls. Write this as a system prompt describing the agent's role, personality, and guidelines. | `You are a customer support agent. You are helpful and friendly...` |
+<img src="https://wxaijzyufbt0o3u0.public.blob.vercel-storage.com/getting-started/create-agent-form.png" alt="New Agent form showing an Agent Name field, the Agent Instructions section with a description textarea and Generate Instructions button, a Write instructions manually option, and the Voice and Model section below" />
 
-<img src="https://wxaijzyufbt0o3u0.public.blob.vercel-storage.com/getting-started/create-agent-form.png" alt="New Agent form with Agent Name text field, Agent Prompt textarea, and the beginning of Voice and Session Settings below" />
+## Write your agent instructions
+
+Loquent gives you two ways to create instructions:
+
+### Generate with AI
+
+Describe your agent in plain language — what it does, how it should sound, and what it should avoid. Click **Generate Instructions** and Loquent's AI writes a complete set of instructions for you.
+
+<img src="https://wxaijzyufbt0o3u0.public.blob.vercel-storage.com/getting-started/create-agent-generate.png" alt="Agent Instructions section with a description filled in reading a friendly receptionist for Loquent that answers questions, schedules demos, and transfers callers to sales, and the Generate Instructions button ready to click" />
+
+### Write manually
+
+Click **Write instructions manually** to open a raw text editor and write the prompt yourself.
+
+:::tip
+After generating, you can refine the instructions using AI toolbar actions like **Improve**, **Add examples**, and **Enhance with org data**. See [Instruction Builder](/agents/instruction-builder) for details.
+:::
 
 ## Configure voice and session settings
 
-Scroll down to the **Voice & Session Settings** section. These settings control how the agent sounds and processes speech during calls.
+Scroll down to the **Voice & Model** section. These settings control how the agent sounds and processes speech during calls.
 
 | Setting | Default | Description |
-| --- | --- | --- |
-| **Voice** | `Alloy` | The text-to-speech voice the agent uses on calls |
+|---------|---------|-------------|
+| **Voice** | `Marin` | The text-to-speech voice the agent uses on calls |
 | **Model** | `GPT Realtime` | The AI model that powers the agent's responses |
-| **Speed** | `1` | Speech rate multiplier. Higher values produce faster speech. |
+| **Speed** | `1` | Speech rate multiplier. Higher values produce faster speech |
 | **Noise Reduction** | `Near Field` | Filters background noise from the caller's audio |
-| **Voice Activity Detection** | `Semantic VAD` | Determines when the caller has finished speaking before the agent responds |
-| **Eagerness** | `Medium` | Controls how quickly the agent jumps in after detecting the caller has stopped talking |
-
-The **Knowledge Bases** section at the bottom lets you attach documents the agent can reference during calls. If you have not created any knowledge bases yet, this section shows "No knowledge bases available."
-
-<img src="https://wxaijzyufbt0o3u0.public.blob.vercel-storage.com/getting-started/create-agent-config.png" alt="Voice and Session Settings section showing dropdowns for Voice, Model, Noise Reduction, Voice Activity Detection, Eagerness, a numeric input for Speed, and an empty Knowledge Bases section" />
+| **Voice Activity Detection** | `Semantic VAD` | Determines when the caller has finished speaking |
+| **Eagerness** | `Medium` | Controls how quickly the agent responds after the caller stops talking |
 
 ## Save the agent
 
-Click **Save** in the top-right corner of the page. Loquent redirects you to the Agents list where your new agent appears.
+Click **Save**. Loquent redirects you to the Agents list where your new agent appears.
 
 :::tip
 Your agent is ready but needs a phone number to receive calls. Continue to [Buy a Phone Number](/getting-started/buy-number/) to connect your agent to a live line.
