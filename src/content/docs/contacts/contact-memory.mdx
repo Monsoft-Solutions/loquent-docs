@@ -1,0 +1,33 @@
+---
+title: Contact Memory
+description: Understand how Loquent builds and uses a persistent memory of each contact across calls
+---
+
+Contact Memory is a single AI-maintained summary of everything Loquent has learned about a contact from their call history. It updates automatically after every call and is injected into the agent's context before the first word of the next conversation — so your agent can greet returning callers by name, remember past preferences, and pick up where the last call left off.
+
+<img src="https://wxaijzyufbt0o3u0.public.blob.vercel-storage.com/contacts/contact-memory.png" alt="Contact Details page showing a Contact Memory note in the activity timeline and the right panel listing the contact's name, business, and preferences" />
+
+## How memory is built
+
+After each call, Loquent's AI reads the interaction note for that call and synthesizes it into the contact's existing memory. The result is a single, continuously updated note — not a growing list of summaries.
+
+## What memory contains
+
+Memory typically includes:
+- The contact's name (if mentioned during calls)
+- Recurring topics, preferences, or concerns
+- Unresolved issues or outstanding follow-ups
+- Any context the agent should know before answering
+
+## How agents use memory
+
+Before connecting a call, Loquent injects the contact's memory into the agent's system context. The agent uses this to personalize its greeting and behavior without you having to configure anything.
+
+:::tip
+Memory improves over time. After 3–5 calls with a contact, agents will noticeably recognize returning callers and reference past interactions.
+:::
+
+## Related pages
+
+- [Contact Notes](/contacts/contact-notes) — the per-call interaction notes that feed into memory
+- [Contact Details](/contacts/contact-details) — the full contact profile
