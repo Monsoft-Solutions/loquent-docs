@@ -37,6 +37,13 @@ export default defineConfig({
 					],
 				},
 				{
+					label: 'Messaging',
+					items: [
+						{ label: 'Messaging Feed', slug: 'messaging/messaging-feed' },
+						{ label: 'Send an SMS', slug: 'messaging/send-sms' },
+					],
+				},
+				{
 					label: 'Calls',
 					items: [
 						{ label: 'Call History', slug: 'calls/call-history' },
@@ -48,6 +55,9 @@ export default defineConfig({
 					items: [
 						{ label: 'Manage Contacts', slug: 'contacts/manage-contacts' },
 						{ label: 'Contact Details', slug: 'contacts/contact-details' },
+						{ label: 'Contact Notes', slug: 'contacts/contact-notes' },
+						{ label: 'Contact Tags', slug: 'contacts/contact-tags' },
+						{ label: 'Contact Memory', slug: 'contacts/contact-memory' },
 						{ label: 'Add a Phone Number', slug: 'contacts/add-phone-number' },
 						{ label: 'Add an Email Address', slug: 'contacts/add-email-address' },
 					],

@@ -1,29 +1,51 @@
 ---
 title: Contact Details
-description: View and edit a contact's name, phone numbers, and email addresses
+description: View a contact's full profile, activity timeline, notes, tags, and communication history
 ---
 
-Click any contact card on the Contacts page to open their details. The Contact Details page shows the contact's name, all linked phone numbers, and all linked email addresses.
+Click any contact in the Contacts list to open their details. The Contact Details page uses a three-column layout: a profile sidebar on the left, an activity timeline in the center, and panels for notes and to-dos on the right.
 
-<img src="https://wxaijzyufbt0o3u0.public.blob.vercel-storage.com/contacts/contact-detail.png" alt="Contact Details page for Maria showing First Name field, Phone Numbers section with +13057974357, and Email Addresses section with an Add Email button" />
+<img src="https://wxaijzyufbt0o3u0.public.blob.vercel-storage.com/contacts/contact-details-v2.png" alt="Contact Details page with three columns: left sidebar showing avatar, tags, and phone numbers; center timeline showing calls and notes; right panel showing notes" />
+
+## Left sidebar
+
+The sidebar shows the contact's avatar, name, and quick-action buttons for calling or messaging. Below that:
+
+- **Tags** — labels assigned to this contact. Click a tag to edit or remove it, or click **+ Add Tag** to assign a new one. See [Contact Tags](/contacts/contact-tags).
+- **Phone Numbers** — all numbers linked to this contact. Click **+** to add another.
+- **Email Addresses** — all emails linked to this contact. Click **+** to add another.
+
+## Activity timeline
+
+The center column shows a chronological feed of all activity for this contact: calls, notes, and to-dos grouped by date.
+
+<img src="https://wxaijzyufbt0o3u0.public.blob.vercel-storage.com/contacts/contact-details-timeline.png" alt="Activity timeline filter bar showing All, Calls, Notes, and Todos tabs above a date-grouped list of activity cards" />
+
+Use the filter bar to focus on a specific type:
+
+| Filter | Shows |
+|--------|-------|
+| **All** | Calls, notes, and to-dos together |
+| **Calls** | Call cards only |
+| **Notes** | Notes only (manual and AI-generated) |
+| **Todos** | To-do items only |
+
+## Right panel
+
+The right panel provides quick access to the contact's [notes](/contacts/contact-notes) and [to-dos](/todos/manage-todos) without scrolling the timeline.
 
 ## Edit a contact's name
 
-Update the **First Name** or **Last Name** fields and click **Save**. Changes take effect immediately.
-
-## Phone numbers
-
-The **Phone Numbers** section lists all phone numbers linked to this contact. Loquent uses these numbers to recognize the contact when they call. Click **+ Add Phone** to add a new number.
-
-## Email addresses
-
-The **Email Addresses** section lists all email addresses linked to this contact. Loquent uses the preferred email when sending automated emails through to-do actions. Click **+ Add Email** to add a new address.
+Click the **First Name** or **Last Name** fields in the sidebar to edit them inline. Changes save automatically.
 
 ## Delete a contact
 
-Click **Delete** to permanently remove the contact. This cannot be undone. Phone numbers and emails linked to this contact are also removed.
+Scroll to the bottom of the left sidebar and click **Delete contact**. This permanently removes the contact and all linked phone numbers and email addresses.
 
 ## Related pages
 
+- [Contact Notes](/contacts/contact-notes) — add and view notes on this contact
+- [Contact Tags](/contacts/contact-tags) — assign tags for filtering and AI auto-tagging
+- [Contact Memory](/contacts/contact-memory) — how agents remember this contact across calls
 - [Add a Phone Number](/contacts/add-phone-number) — link a phone number for caller identification
 - [Add an Email Address](/contacts/add-email-address) — link an email for automated messages
