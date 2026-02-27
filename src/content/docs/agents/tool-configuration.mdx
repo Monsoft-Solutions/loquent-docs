@@ -1,0 +1,35 @@
+---
+title: Tool Configuration
+description: Configure which tools your agent can use and how each tool behaves
+---
+
+Tools extend what your agent can do during a call. Each tool is configured per agent, so different agents can have different capabilities. Open an agent and scroll to the **Tools** section to configure them.
+
+<img src="https://wxaijzyufbt0o3u0.public.blob.vercel-storage.com/agents/tool-configuration.png" alt="Tools section on the Agent Details page showing Transfer Call, Lookup Caller, and Query Knowledge each with a checkmark indicating they are enabled, and a Transfer numbers subsection with an Add button" />
+
+## Available tools
+
+### Transfer Call
+
+Lets the agent hand off an active call to a human phone number mid-conversation. Enable it and add one or more **Transfer numbers** — the phone numbers the agent can redirect calls to.
+
+:::tip
+Add transfer instructions in your agent's instructions so it knows when to use this tool. For example: "Transfer to a human if the caller asks to speak to someone directly."
+:::
+
+### Lookup Caller
+
+Lets the agent query your CRM integration during a call to retrieve caller information. Requires [Integrations](/settings/settings#integrations) to be configured.
+
+### Query Knowledge
+
+Lets the agent search your [knowledge base](/knowledge/knowledge-base) to answer questions during a call. The agent uses this automatically when a caller asks a question it doesn't know from its instructions alone.
+
+## Enable or disable a tool
+
+Click a tool's checkbox to toggle it on or off. The header shows a count of enabled tools (e.g. **3 enabled**). Changes take effect after you click **Save**.
+
+## Related pages
+
+- [Instruction Builder](/agents/instruction-builder) — write the instructions that govern when tools are used
+- [Knowledge Base](/knowledge/knowledge-base) — manage the content agents can search

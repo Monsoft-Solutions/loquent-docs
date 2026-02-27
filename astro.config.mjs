@@ -35,6 +35,7 @@ export default defineConfig({
 					items: [
 						{ label: 'Instruction Builder', slug: 'agents/instruction-builder' },
 						{ label: 'Organization Profile', slug: 'agents/organization-profile' },
+						{ label: 'Tool Configuration', slug: 'agents/tool-configuration' },
 					],
 				},
 				{
