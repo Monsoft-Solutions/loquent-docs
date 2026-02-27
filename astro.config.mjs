@@ -33,7 +33,7 @@ export default defineConfig({
 				{
 					label: 'Dashboard',
 					items: [
-						{ label: 'Filter by Date', slug: 'dashboard/filter-by-date' },
+						{ label: 'Dashboard', slug: 'dashboard/dashboard' },
 					],
 				},
 				{
