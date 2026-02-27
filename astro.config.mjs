@@ -22,18 +22,18 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: 'Dashboard',
-					items: [
-						{ label: 'Filter by Date', slug: 'dashboard/filter-by-date' },
-					],
-				},
-				{
 					label: 'Getting Started',
 					items: [
 						{ label: 'Welcome', slug: 'getting-started/welcome' },
 						{ label: 'Sign Up', slug: 'getting-started/sign-up' },
 						{ label: 'Create an Agent', slug: 'getting-started/create-agent' },
 						{ label: 'Buy a Phone Number', slug: 'getting-started/buy-number' },
+					],
+				},
+				{
+					label: 'Dashboard',
+					items: [
+						{ label: 'Filter by Date', slug: 'dashboard/filter-by-date' },
 					],
 				},
 				{
