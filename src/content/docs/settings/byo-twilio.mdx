@@ -1,0 +1,53 @@
+---
+title: Bring Your Own Twilio
+description: Connect your Twilio account to route calls through your own credentials and import phone numbers
+---
+
+The Telephony tab in Settings lets you connect your own Twilio account to Loquent. When you bring your own Twilio credentials, calls route through your Twilio account instead of the system default, and you can import existing phone numbers you already own.
+
+## Set up your Twilio account
+
+Open **Settings** from the sidebar, then click the **Telephony** tab. By default, calls route through the system Twilio account. To use your own account, click **Set up my own Twilio account**.
+
+A credential form appears with two fields:
+
+| Field | Description |
+|-------|-------------|
+| **Twilio Account SID** | Your account identifier from the Twilio console (starts with `AC`) |
+| **Twilio Auth Token** | Your authentication token from the Twilio console |
+
+Enter both credentials and click **Save Credentials**. Loquent validates the credentials against the Twilio API before saving. If validation fails, check that you copied the values exactly as they appear in your Twilio console.
+
+When credentials are saved successfully, the form closes and a **Connected** section appears showing your masked Account SID.
+
+## Set up SMS events
+
+After connecting your Twilio credentials, a **Set Up SMS Events** section appears below the masked SID. This step configures Twilio to send inbound SMS messages and delivery receipts to Loquent.
+
+Click **Set Up SMS Events**. The button shows a loading spinner while Loquent creates a Twilio EventSink and Subscription pointing to Loquent's webhook endpoint.
+
+When setup completes, a green checkmark badge appears with the text **Events configured**. If setup fails, an error message appears below the button.
+
+:::note
+The **Set Up SMS Events** button is idempotent — you can click it multiple times without causing issues. Each click verifies or recreates the event configuration.
+:::
+
+## Import phone numbers
+
+After connecting your credentials and setting up SMS events, the **Import Numbers** section appears. This section shows phone numbers you own in Twilio that are not yet imported into Loquent.
+
+Each row displays a phone number with an **Import** button. Click **Import** next to the number you want to add to Loquent. The number appears in your **Phone Numbers** page and can be assigned to agents or used for outbound calls and messages.
+
+## Change your Twilio account
+
+To replace your connected Twilio credentials, click **Change account** in the **Connected** section. The credential form reappears. Enter new credentials and click **Save Credentials**.
+
+Changing credentials does not delete phone numbers you previously imported. Numbers remain in Loquent even if they no longer exist in the new Twilio account.
+
+## Return to system default
+
+To stop using your own Twilio account and return to the system default, click **Change account**, leave both credential fields empty, and click **Save Credentials**. Calls route through the system Twilio account again.
+
+:::caution
+Twilio credentials grant full access to your Twilio account. Only share these credentials with team members who need access to telephony settings. Your Auth Token is never sent to the client after being saved.
+:::
