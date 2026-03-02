@@ -94,6 +94,7 @@ export default defineConfig({
 					items: [
 						{ label: 'Settings', slug: 'settings/settings' },
 						{ label: 'Organization Profile', slug: 'settings/organization-profile' },
+						{ label: 'Bring Your Own Twilio', slug: 'settings/byo-twilio' },
 					],
 				},
 			],
